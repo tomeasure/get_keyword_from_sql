@@ -1,6 +1,6 @@
 def canNotSelect(word):
     import cx_Oracle as orc
-    conn = orc.connect('BDATA/BDATA@10.232.1.101:1521/KSERP')
+    conn = orc.connect('db_name/db_pass@host_ip:port/db_usr')
     cursor = conn.cursor()
     try:
         cursor.execute(word)
